@@ -1,0 +1,202 @@
+[
+  {
+    "star_count": 1414,
+    "is_official": true,
+    "name": "centos",
+    "is_trusted": false,
+    "is_automated": false,
+    "description": "The official build of CentOS."
+  },
+  {
+    "star_count": 3,
+    "is_official": false,
+    "name": "nathonfowlie/centos-jre",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": "Latest CentOS image with the JRE pre-installed."
+  },
+  {
+    "star_count": 0,
+    "is_official": false,
+    "name": "pdericson/centos",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": "Docker image for CentOS"
+  },
+  {
+    "star_count": 5,
+    "is_official": false,
+    "name": "nimmis/java-centos",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": "This is docker images of CentOS 7 with different versions of java"
+  },
+  {
+    "star_count": 7,
+    "is_official": false,
+    "name": "torusware/speedus-centos",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": "Always updated official CentOS docker image with Torusware Speedus Lite acceleration software"
+  },
+  {
+    "star_count": 6,
+    "is_official": false,
+    "name": "million12/centos-supervisor",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": "Base CentOS-7 with supervisord launcher, highly extensible."
+  },
+  {
+    "star_count": 0,
+    "is_official": false,
+    "name": "blacklabelops/centos",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": "Blacklabelops Centos 7.1.503 base image without systemd. Built daily!"
+  },
+  {
+    "star_count": 6,
+    "is_official": false,
+    "name": "jdeathe/centos-ssh",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": "CentOS-6 6.6 x86_64 / EPEL/IUS Repos / OpenSSH / Supervisor."
+  },
+  {
+    "star_count": 1,
+    "is_official": false,
+    "name": "layerworx/centos",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": "CentOS container with etcd, etcdctl, confd and epel."
+  },
+  {
+    "star_count": 0,
+    "is_official": false,
+    "name": "jasonish/centos-suricata",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": "Suricata base image based on CentOS 7."
+  },
+  {
+    "star_count": 1,
+    "is_official": false,
+    "name": "nathonfowlie/centos-jira",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": "JIRA running on the latest version of CentOS"
+  },
+  {
+    "star_count": 0,
+    "is_official": false,
+    "name": "jsmigel/centos-epel",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": "Docker base image of CentOS w/ EPEL installed"
+  },
+  {
+    "star_count": 9,
+    "is_official": false,
+    "name": "blalor/centos",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": "Bare-bones base CentOS 6.5 image"
+  },
+  {
+    "star_count": 1,
+    "is_official": false,
+    "name": "lighthopper/orientdb-centos",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": "A Dockerfile for creating an OrientDB image on top of the official CentOS distribution."
+  },
+  {
+    "star_count": 1,
+    "is_official": false,
+    "name": "yajo/centos-epel",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": "CentOS with EPEL and fully updated"
+  },
+  {
+    "star_count": 2,
+    "is_official": false,
+    "name": "centos/mariadb55-centos7",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": ""
+  },
+  {
+    "star_count": 0,
+    "is_official": false,
+    "name": "lighthopper/openjdk-centos",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": "A Dockerfile for creating an OpenJDK image on top of the official CentOS distribution."
+  },
+  {
+    "star_count": 0,
+    "is_official": false,
+    "name": "radiantbluetechnologies/rialtobase-centos",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": "rialtobase-centos"
+  },
+  {
+    "star_count": 11,
+    "is_official": false,
+    "name": "jdeathe/centos-ssh-apache-php",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": "CentOS-6 6.6 x86_64 / Apache / PHP / PHP memcached / PHP APC / Composer."
+  },
+  {
+    "star_count": 57,
+    "is_official": false,
+    "name": "ansible/centos7-ansible",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": "Ansible on Centos7"
+  },
+  {
+    "star_count": 0,
+    "is_official": false,
+    "name": "timhughes/centos",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": "Centos with systemd installed and running"
+  },
+  {
+    "star_count": 6,
+    "is_official": false,
+    "name": "openshift/wildfly-8-centos",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": "DEPRECATED - see openshift/wildfly-81-centos7"
+  },
+  {
+    "star_count": 2,
+    "is_official": false,
+    "name": "jdeathe/centos-ssh-mysql",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": "CentOS-6 6.6 x86_64 / MySQL."
+  },
+  {
+    "star_count": 0,
+    "is_official": false,
+    "name": "insaneworks/centos",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": "CentOS 6.5 x86_64 + @update"
+  },
+  {
+    "star_count": 1,
+    "is_official": false,
+    "name": "eeacms/centos",
+    "is_trusted": true,
+    "is_automated": true,
+    "description": ""
+  }
+]

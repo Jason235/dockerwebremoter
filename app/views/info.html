@@ -1,0 +1,271 @@
+<h3 class="page-title">
+	Docker Informathion <small>version info</small>
+</h3>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="portlet light bordered">
+			<div class="portlet-title">
+				<div class="caption font-green-sharp">
+					<i class="icon-settings font-green-sharp"></i>
+					<span class="caption-subject bold uppercase">Docker Version</span>
+					<span class="caption-helper">/version</span>
+				</div>
+			</div>
+			<div class="portlet-body" id="versionblock">
+				<div class="table-scrollable">
+					<table class="table table-striped table-bordered table-advance table-hover">
+						<thead>
+							<th width="180px">
+							</th>
+							<th></th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Version
+								</td>
+								<td>{{Version.Version}}</td>
+							</tr>
+							<tr>
+								<td>ApiVersion
+								</td>
+								<td>{{Version.ApiVersion}}</td>
+							</tr>
+							<tr>
+								<td>GitCommit
+								</td>
+								<td>{{Version.GitCommit}}</td>
+							</tr>
+							<tr>
+								<td>GoVersion
+								</td>
+								<td>{{Version.GoVersion}}</td>
+							</tr>
+							<tr>
+								<td>Os
+								</td>
+								<td>{{Version.Os}}</td>
+							</tr>
+							<tr>
+								<td>Arch
+								</td>
+								<td>{{Version.Arch}}</td>
+							</tr>
+							<tr>
+								<td>Kernel Version
+								</td>
+								<td>{{Version.KernelVersion}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div> 
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="portlet light bordered">
+			<div class="portlet-title">
+				<div class="caption font-blue-sharp">
+					<i class="icon-list font-blue-sharp"></i>
+					<span class="caption-subject bold uppercase">Docker Info</span>
+					<span class="caption-helper">/info</span>
+				</div>
+			</div>
+			<div class="portlet-body" id="infoblock">
+				<div class="table-scrollable">
+					<table class="table table-striped table-bordered table-advance table-hover">
+						<thead>
+							<th width="180px">
+							</th>
+							<th></th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>ID
+								</td>
+								<td>{{Info.ID}}</td>
+							</tr>
+							<tr>
+								<td>Containers
+								</td>
+								<td>{{Info.Containers}}</td>
+							</tr>
+							<tr>
+								<td>Images
+								</td>
+								<td>{{Info.Images}}</td>
+							</tr>
+							<tr>
+								<td>Driver
+								</td>
+								<td>{{Info.Driver}}</td>
+							</tr>
+							<tr>
+								<td>Driver Satus
+								</td>
+								<td>
+									<table>
+										<tr ng-repeat="value in Info.DriverStatus">
+											<td width="180">{{value[0]}}</td>
+											<td>{{value[1]}}</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>Memory Limit
+								</td>
+								<td>{{Info.MemoryLimit}}</td>
+							</tr>
+							<tr>
+								<td>Swap Limit
+								</td>
+								<td>{{Info.SwapLimit}}</td>
+							</tr>
+							<tr>
+								<td>Cpu Cfs Period
+								</td>
+								<td>{{Info.CpuCfsPeriod}}</td>
+							</tr>
+							<tr>
+								<td>Cpu Cfs Quota
+								</td>
+								<td>{{Info.CpuCfsQuota}}</td>
+							</tr>
+							<tr>
+								<td>IPv4 Forwarding
+								</td>
+								<td>{{Info.IPv4Forwarding}}</td>
+							</tr>
+							<tr>
+								<td>Debug
+								</td>
+								<td>{{Info.Debug}}</td>
+							</tr>
+							<tr>
+								<td>NFd
+								</td>
+								<td>{{Info.NFd}}</td>
+							</tr>
+							<tr>
+								<td>Debug
+								</td>
+								<td>{{Info.Debug}}</td>
+							</tr>
+							<tr>
+								<td>Oom Kill Disable
+								</td>
+								<td>{{Info.OomKillDisable}}</td>
+							</tr>
+							<tr>
+								<td>NGoroutines
+								</td>
+								<td>{{Info.NGoroutines}}</td>
+							</tr>
+							<tr>
+								<td>System Time
+								</td>
+								<td>{{Info.SystemTime}}</td>
+							</tr>
+							<tr>
+								<td>Execution Driver
+								</td>
+								<td>{{Info.ExecutionDriver}}</td>
+							</tr>
+							<tr>
+								<td>Logging Driver
+								</td>
+								<td>{{Info.LoggingDriver}}</td>
+							</tr>
+							<tr>
+								<td>NEvents Listener
+								</td>
+								<td>{{Info.NEventsListener}}</td>
+							</tr>
+							<tr>
+								<td>Kernel Version
+								</td>
+								<td>{{Info.KernelVersion}}</td>
+							</tr>
+							<tr>
+								<td>Operating System
+								</td>
+								<td>{{Info.OperatingSystem}}</td>
+							</tr>
+							<tr>
+								<td>Index Server Address
+								</td>
+								<td>{{Info.IndexServerAddress}}</td>
+							</tr>
+							<tr>
+								<td>Registry Config
+								</td>
+								<td>
+									<table>
+										<tr>
+											<td width="180">Insecure Registry CIDRs</td>
+											<td>{{Info.RegistryConfig.InsecureRegistryCIDRs}}</td>
+										</tr>
+										<tr>
+											<td width="180">Index Configs</td>
+											<td>
+												{{Info.RegistryConfig.IndexConfigs}}
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>Init Sha1</td>
+								<td>{{Info.InitSha1}}</td>
+							</tr>
+							<tr>
+								<td>Init Path</td>
+								<td>{{Info.InitPath}}</td>
+							</tr>
+							<tr>
+								<td>NCPU</td>
+								<td>{{Info.NCPU}}</td>
+							</tr>
+							<tr>
+								<td>Mem Total</td>
+								<td>{{Info.MemTotal}}</td>
+							</tr>
+							<tr>
+								<td>Docker Root Dir</td>
+								<td>{{Info.DockerRootDir}}</td>
+							</tr>
+							<tr>
+								<td>Http Proxy</td>
+								<td>{{Info.HttpProxy}}</td>
+							</tr>
+							<tr>
+								<td>Https Proxy</td>
+								<td>{{Info.HttpsProxy}}</td>
+							</tr>
+							<tr>
+								<td>No Proxy</td>
+								<td>{{Info.NoProxy}}</td>
+							</tr>
+							<tr>
+								<td>Name</td>
+								<td>{{Info.Name}}</td>
+							</tr>
+							<tr>
+								<td>Labels</td>
+								<td>{{Info.Labels}}</td>
+							</tr>
+							<tr>
+								<td>Experimental Build</td>
+								<td>{{Info.ExperimentalBuild}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div> 
+			</div>
+		</div>
+	</div>
+</div>

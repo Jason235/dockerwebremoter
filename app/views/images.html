@@ -1,0 +1,85 @@
+<style>
+/* Specify styling for tooltip contents */
+
+.tooltip.customClass .tooltip-inner {
+    color: #880000;
+    background-color: #ffff66;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+
+/* Hide arrow */
+
+.tooltip.customClass .tooltip-arrow {
+    display: none;
+}
+</style>
+<h3 class="page-title">
+	Docker Images <small>local images</small>
+</h3>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption font-green-sharp">
+                    <i class="icon-settings font-green-sharp"></i>
+                    <span class="caption-subject bold uppercase">Docker Images</span>
+                    <span class="caption-helper">/images</span>
+                </div>
+                <div class="actions">
+                    <div href="javascript:;" class="btn btn-default" ng-click="OnChnageAll()">
+                        <i class="fa fa-check-square-o" ng-show="IsAll"></i> 
+                        <i class="fa fa-square-o" ng-show="!IsAll"></i> All </div>
+                    <a class="btn btn-circle btn-icon-only btn-default fullscreen" href="javascript:;">
+                    </a>
+                </div>
+            </div>
+            <div class="portlet-body" id="versionblock">
+                <div class="table-scrollable">
+                    <table class="table table-striped table-bordered table-advance table-hover">
+                        <thead>
+                            <th width="100">ID</th>
+                            <th width="100">ParentId</th>
+                            <th>Repo Tages</th>
+                            <th>Repo Digests</th>
+                            <th>Created</th>
+                            <th>Sized</th>
+                            <th>Virtual Size</th>
+                            <th>Labels</th>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="image in Images">
+                                <td>
+                                    <span 
+										class="text-info" style="cursor:pointer;" ng-click="OnImageDetail(image.Id)"
+                                    	tooltip="{{image.Id | idstringbreak}}" tooltip-class="customClass">
+										{{image.Id | stringommitted:8}}</td>
+									</span>
+                                </td>
+                                <td>
+                                    <span tooltip="{{image.ParentId | idstringbreak}}" tooltip-class="customClass">
+										{{image.ParentId | stringommitted:8}}
+									</span>
+                                </td>
+                                <td>
+                                    <div ng-repeat="repotag in image.RepoTags">
+                                        {{repotag}}
+                                    </div>
+                                </td>
+                                <td>
+                                    <div ng-repeat="repodigest in image.RepoDigests">
+                                        {{repodigest}}
+                                    </div>
+                                </td>
+                                <td>{{image.Created | createdate | date:'yyyy-MM-dd HH:mm:ss'}}</td>
+                                <td>{{image.Size | filterstoresize}}</td>
+                                <td>{{image.VirtualSize | filterstoresize}}</td>
+                                <td>{{image.Labels}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

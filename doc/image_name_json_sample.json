@@ -1,0 +1,71 @@
+{
+  "Id": "efcc22555604924a11b882e01df352e9ed53ff288b3082059018f06b3b43837b",
+  "Parent": "da545da3c1009ec4c8c578e22d727ff357900bb6d940a331c6607461c3c26471",
+  "Comment": "",
+  "Created": "2015-09-28T04:56:34.111223007Z",
+  "Container": "56dc552e6eeb03893a908a091a65c5a1330f22867451c1780d46891352e9d636",
+  "ContainerConfig": {
+    "Hostname": "e611e15f9c9d",
+    "Domainname": "",
+    "User": "",
+    "AttachStdin": false,
+    "AttachStdout": false,
+    "AttachStderr": false,
+    "PortSpecs": null,
+    "ExposedPorts": null,
+    "Tty": false,
+    "OpenStdin": false,
+    "StdinOnce": false,
+    "Env": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+    ],
+    "Cmd": [
+      "/bin/sh",
+      "-c",
+      "echo \"deb http://archive.ubuntu.com/ubuntu/ raring main universe\" >> /etc/apt/sources.list"
+    ],
+    "Image": "da545da3c1009ec4c8c578e22d727ff357900bb6d940a331c6607461c3c26471",
+    "Volumes": null,
+    "VolumeDriver": "",
+    "WorkingDir": "",
+    "Entrypoint": null,
+    "NetworkDisabled": false,
+    "MacAddress": "",
+    "OnBuild": [],
+    "Labels": null
+  },
+  "DockerVersion": "1.5.0",
+  "Author": "dcoker_user docker_user@email.com",
+  "Config": {
+    "Hostname": "e611e15f9c9d",
+    "Domainname": "",
+    "User": "",
+    "AttachStdin": false,
+    "AttachStdout": false,
+    "AttachStderr": false,
+    "PortSpecs": null,
+    "ExposedPorts": null,
+    "Tty": false,
+    "OpenStdin": false,
+    "StdinOnce": false,
+    "Env": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+    ],
+    "Cmd": [
+      "/bin/bash"
+    ],
+    "Image": "da545da3c1009ec4c8c578e22d727ff357900bb6d940a331c6607461c3c26471",
+    "Volumes": null,
+    "VolumeDriver": "",
+    "WorkingDir": "",
+    "Entrypoint": null,
+    "NetworkDisabled": false,
+    "MacAddress": "",
+    "OnBuild": [],
+    "Labels": null
+  },
+  "Architecture": "amd64",
+  "Os": "linux",
+  "Size": 1954,
+  "VirtualSize": 188361251
+}

@@ -1,0 +1,108 @@
+<!doctype html>
+<html data-ng-app="app">
+  <head>
+    <title data-ng-bind="'Docker Web Remoter | ' + $state.current.data.pageTitle"></title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/simple-line-icons/css/simple-line-icons.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/jquery.uniform/themes/default/css/uniform.default.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css" />
+    
+    <link id="ng_load_plugins_before" />
+
+    <link rel="stylesheet" type="text/css" href="styles/components.css" />
+    <link rel="stylesheet" type="text/css" href="styles/plugins.css" />
+    <link rel="stylesheet" type="text/css" href="styles/layout/layout.css" />
+    <link rel="stylesheet" type="text/css" href="styles/layout/custom.css" />
+    <link rel="stylesheet" type="text/css" href="styles/layout/darkblue.css" />
+    <lint rel="stylesheet" type="text/css" href="styles/site.css" />
+  </head>
+  <body ng-controller="AppController" class="page-header-fixed page-sidebar-closed-hide-logo page-quick-sidebar-over-content page-on-load" ng-class="{'page-container-bg-solid': settings.layout.pageBodySolid, 'page-sidebar-closed': settings.layout.pageSidebarClosed}">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div ng-spinner-bar class="page-spinner-bar">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>
+
+    <div data-ng-include="'tpl/header.html'" data-ng-controller="HeaderController" class="page-header navbar navbar-fixed-top">
+    </div>
+
+    <div class="clearfix">
+    </div>
+
+    <div class="page-container">
+      <div data-ng-include="'tpl/sidebar.html'" data-ng-controller="SidebarController" class="page-sidebar-wrapper">      
+      </div>
+
+      <div class="page-content-wrapper">
+        <div class="page-content">
+          <div ui-view="LazyLoadView" class="fade-in-up">
+          </div> 
+        </div>  
+      </div>
+    </div>
+    <div data-ng-include="'tpl/footer.html'" data-ng-controller="FooterController" class="page-footer">
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <!--
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+    -->
+    
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/oclazyload/dist/ocLazyLoad.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/jquery.uniform/jquery.uniform.js"></script>
+    <script src="bower_components/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/blockUI/jquery.blockUI.js"></script>
+    <script src="bower_components/bootstrap-switch/dist/js/bootstrap-switch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/directives.js"></script>
+        <script src="scripts/filter.js"></script>
+        <script src="scripts/services/services.js"></script>
+        <script src="scripts/global/metronic.js"></script>
+        <script src="scripts/layout.js"></script>
+        <!-- endbuild -->
+
+        <script type="text/javascript">
+          /* Init Metronic's core jquery plugins and layout scripts */
+          $(document).ready(function() {   
+            Metronic.init(); // Run metronic theme
+            //Metronic.setAssetsPath('../../../assets/'); // Set the assets folder path     
+          });
+        </script>
+</body>
+</html>
